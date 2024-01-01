@@ -163,7 +163,7 @@ $(function () {
     const debouncedResize = _.debounce(onWindowResize, 500);
     function onWindowResize() {
         console.log('Window resized!');
-        location.reload();
+        // location.reload();
     }
     $(window).on('resize', debouncedResize);
 });
@@ -191,7 +191,7 @@ var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".blog",
         scroller: ".main",
-        markers: true,
+        // markers: true,
         start: "1050% center",
         end: "1150% center",
         scrub: 1.5,

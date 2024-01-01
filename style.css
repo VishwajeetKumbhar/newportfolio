@@ -1351,3 +1351,24 @@ footer {
     }
 
 }
+
+@media (max-width:460px) {
+    .skills{
+        height: 220vh;
+    }
+    .skills .box-skills {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .skills .box-skills .box {
+        border-radius: 5px;
+        background-color: #7c2222;
+        text-align: center;
+        padding: 15px 10px;
+        transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+        transform-style: preserve-3d
+    }
+}
