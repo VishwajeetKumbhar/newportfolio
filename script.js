@@ -185,23 +185,89 @@ t7.to(".mygrid", {
 })
 
 
+let mm = gsap.matchMedia();
+mm.add("(min-width: 501px)", () => {
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".blog",
+            scroller: ".main",
+            // markers: true,
+            start: "1050% center",
+            end: "1150% center",
+            scrub: 1.5,
+            pin: true,
+        }
+    });
+    tl
+        .to("#lineone", {
+            marginTop: "-120vh",
+        }, 'baba')
+        .to("#linetwo", {
+            marginTop: "20vh",
+        }, 'baba')
+})
 
+let ss = gsap.matchMedia();
+ss.add("(max-width: 500px)", () => {
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".blog",
+            scroller: ".main",
+            // markers: true,
+            start: "1250% center",
+            end: "1350% center",
+            scrub: 1.5,
+            pin: true,
+        }
+    });
+    tl
+        .to("#lineone", {
+            marginTop: "-60vh",
+        }, 'baba')
+        .to("#linetwo", {
+            marginTop: "20vh",
+        }, 'baba')
+})
 
-var tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".blog",
-        scroller: ".main",
-        // markers: true,
-        start: "1050% center",
-        end: "1150% center",
-        scrub: 1.5,
-        pin: true,
-    }
-});
-tl
-    .to("#lineone", {
-        marginTop: "-120vh",
-    }, 'baba')
-    .to("#linetwo", {
-        marginTop: "20vh",
-    }, 'baba')
+let pp = gsap.matchMedia();
+ss.add("(max-width: 500px)", () => {
+    var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".page4",
+            scroller: ".main",
+            markers: true,
+            start: "10% center",
+            end: "30% center",
+            scrub: 1.5,
+        }
+    });
+    tl
+        .to(".img1", {
+            opacity: "1",
+            rotation: '0deg',
+        },)
+        .to(".img2", {
+            opacity: "1",
+            rotation: '0deg',
+        },)
+        .to(".img3", {
+            opacity: "1",
+            rotation: '0deg',
+        },)
+        .to(".img4", {
+            opacity: "1",
+            rotation: '0deg',
+        },)
+        .to(".img5", {
+            opacity: "1",
+            rotation: '0deg',
+        },)
+
+})
+const toggleButton = document.getElementById("nav-part3")
+const menutoggle = document.getElementById("menunav")
+
+toggleButton.addEventListener("click", () => {
+    console.log("hello")
+    menutoggle.classList.toggle('navtoggle');
+})
