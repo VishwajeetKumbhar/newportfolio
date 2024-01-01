@@ -340,7 +340,6 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border-bottom: 1px solid #fff;
 }
 
 .text-div {
@@ -368,10 +367,6 @@ body {
 
 .elem img:nth-child(1) {
     left: 0;
-}
-
-.elem img:nth-child(3) {
-    right: 0;
 }
 
 .elem:hover h1 {
@@ -534,6 +529,7 @@ body {
 }
 
 .danis {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1071,6 +1067,10 @@ footer {
 @media (max-width:500px) {
 
     /* Navbar */
+
+    #main{
+        overflow: hidden;
+    }
     #nav-part2 {
         display: none;
     }
@@ -1107,46 +1107,65 @@ footer {
         flex-direction: column;
     }
     .page1 h2{
-        font-size: 10vw;
+        font-size: 20vw;
         font-weight: 500;
+        margin-left: 0;
     }
     .page1 h5{
-        font-size: 7vw;
+        font-size: 10vw;
+        margin-left: 0;
+
     }
     .page1 p{
-        font-size: 5vw;
+        font-size: 7vw;
+        margin-left: 0;
+        font-weight: 500;
+
     }
     .btns{
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        gap: 8vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .danis{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .danis{
-        width: 100%;
+        overflow: hidden;
+        width: 400%;
         height: 15vw;
         /* overflow: hidden; */
     }
     .danis h1 {
-        font-size: 9vw;
-        animation: 5s linear infinite;
+        height: 100%;
+        display: inline-block;
+        font-size: 15vw;
+        animation: 10s linear infinite;
         animation-name: text;
     }
     
     @keyframes text {
         from {
-            transform: translate(0);
+            transform: translate(0%);
         }
     
         to {
-            transform: translate(-200px);
+            transform: translate(-90.5%);
         }
+    }
+    .content{
+        padding: 15px;
     }
     .content h1{
         font-size: 15vw;
     }
     .gsap__item{
-        height: 40vh;
-        width: 80vw;
+        height: 60vh;
+        width: 85vw;
     }
     .ingBX{
         width: 100%;
@@ -1156,10 +1175,27 @@ footer {
         width: 100%;
         height: 100%;
     }
-
+    .page4{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 2px solid #fff;
+        height: 150vh;
+    }
+    .page4h1{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .page4 h2{
+        color: rgb(255, 255, 255);
+        font-size: 10vw;
+    }
     .elem{
         width: 100%;
         display: flex;
+        border-bottom: 2px solid #fff;
         align-content: center;
         justify-content: center;
         flex-direction: column;
@@ -1171,14 +1207,22 @@ footer {
     .elem img {
         border: 1vw solid #c7c6c6;
         position: absolute;
-        right: 50px;
-        top: 100px;
-        width: 350px;
-        height: 220px;
+        right: 20px;
+        top: -150px;
+        width: 300px;
+        height: 150px;
         opacity: 0;
         z-index: 20;
         transition: all ease-out 0.5s;
         transform: translate(10%) rotate(2deg);
+    }
+    .text-div{
+        overflow: hidden;
+        height: 25px;
+    }
+    .elem:hover h1 {
+        color: #1cac74;
+        transform: translateY(-150%);
     }
     .skills{
         height: 150vh;
@@ -1226,6 +1270,8 @@ footer {
     }
     .toolsgrid{
         height: 30vh;
+        /* border: 2px solid red; */
+
     }
     .profilegrid h2{
         font-size: 8vw;
@@ -1354,21 +1400,26 @@ footer {
 
 @media (max-width:460px) {
     .skills{
-        height: 220vh;
+        height: 150vh;
     }
     .skills .box-skills {
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
     }
     
     .skills .box-skills .box {
         border-radius: 5px;
-        background-color: #7c2222;
+        background-color: #ffffff;
         text-align: center;
         padding: 15px 10px;
         transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
         transform-style: preserve-3d
     }
+    /* @media (max-height: 660px) {
+        .aboutme{
+            border: 2px solid red;
+        }
+    } */
 }
