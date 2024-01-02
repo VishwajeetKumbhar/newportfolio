@@ -1255,7 +1255,6 @@ footer {
         font-size: 10vw;
     }
     .mygrid {
-        border: 2px solid red;
         overflow: hidden;
         height: 180vh;
         opacity: 1 !important;
@@ -1443,6 +1442,7 @@ footer {
 @media (max-width:460px) {
     .skills{
         height: 150vh;
+        z-index: 99999;
     }
     .skills .box-skills {
 

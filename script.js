@@ -235,7 +235,7 @@ ss.add("(max-width: 500px)", () => {
         scrollTrigger: {
             trigger: ".page4",
             scroller: ".main",
-            markers: true,
+            // markers: true,
             start: "10% center",
             end: "30% center",
             scrub: 1.5,
