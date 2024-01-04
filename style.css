@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Novabolt;
+    src: url(./Fonts/654a1e5217e59c6ac71220b2_NeueHaasUnica-Medium.ttf);
+}
+
+
+
 /* general *******************************************/
 /****************************************************/
 :root {
@@ -237,16 +244,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 50px;
     position: fixed;
     mix-blend-mode: difference;
     z-index: 102;
-
 }
 
-#nav img {
-    height: 24px;
-}
+
+
 
 #nav-part2 {
     display: flex;
@@ -256,7 +261,7 @@ body {
 }
 
 #nav h3 {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
 }
 
@@ -345,6 +350,7 @@ body {
 }
 
 .elem h1 {
+    
     font-size: 5vw;
     transition: all ease-out 0.5s;
 }
@@ -722,7 +728,8 @@ body {
 .profilegrid h5 {
     width: 100%;
     color: #fff;
-    font-family: 'Gilroy';
+    /* font-family: 'Gilroy'; */
+    font-family: 'Novabolt';
     font-weight: 50;
 }
 
@@ -985,7 +992,7 @@ footer {
     gap: 1vw;
 }
 .btnss{
-    color: #000;
+    color: #ffffff;
     width: 100%;
     display: flex;
     gap: 3vw;
@@ -993,8 +1000,14 @@ footer {
     justify-content: center;
 }
 .btnss button{
-    color: #000;
+    border: none;
+    background-color: #000;
+    color: #ffffff;
     padding: 5px 5px;
+}
+.btnss button a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .right-top-footer input {
