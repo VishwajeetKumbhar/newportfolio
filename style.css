@@ -29,45 +29,6 @@ body {
     background: var(--second-color);
 }
 
-.stardiv {
-    position: absolute;
-    width: 150px;
-    height: 80px;
-    left: 0px;
-    top: 100px;
-    z-index: 999;
-}
-
-.stardiv img {
-    width: 100%;
-    height: 100%;
-    animation-name: ship;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes ship {
-    0% {
-        transform: translate(0, 0) rotate(-45deg);
-    }
-
-    20% {
-        transform: translate(500px, -100px);
-    }
-
-    40% {
-        transform: translate(1200px, 300px);
-    }
-
-    80% {
-        transform: translate(100px, 500px);
-    }
-
-    100% {
-        transform: translate(0px, 0px);
-    }
-}
-
 .wrapp {
     position: relative;
     width: 100%;
